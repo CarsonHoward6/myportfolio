@@ -87,12 +87,7 @@ export default function MediaPage() {
                   playsInline
                   className={styles.categoryImage}
                 />
-              ) : (
-                <div
-                  className={styles.categoryGradient}
-                  style={{ background: cat.gradient }}
-                />
-              )}
+              ) : null}
               <div className={styles.categoryOverlay} />
             </div>
             <div className={styles.categoryInfo}>

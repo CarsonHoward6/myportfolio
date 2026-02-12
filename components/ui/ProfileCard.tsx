@@ -365,7 +365,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
                       />
                     </div>
                     <div className="pc-user-text">
-                      <div className="pc-handle">@{handle}</div>
+                      {handle && <div className="pc-handle">@{handle}</div>}
                       {status && <div className="pc-status">{status}</div>}
                     </div>
                   </div>

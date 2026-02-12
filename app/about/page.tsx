@@ -22,13 +22,18 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <SectionBlock title="Objective">
+        <SectionBlock title="About Me">
           <p className={styles.objective}>
-            Driven Computer Science student at Southern Virginia University with
-            a strong foundation in full-stack development and cloud services.
-            Passionate about building scalable web applications and delivering
-            clean, user-focused solutions. Seeking opportunities to apply
-            technical skills in a collaborative, fast-paced environment.
+            I&apos;m Carson Howard, a Computer Science student originally from
+            Queen Creek, Arizona, graduating in May 2026. I focus on full-stack
+            development and enjoy building efficient, user-centered applications
+            that solve real-world problems. I&apos;m passionate about learning
+            modern technologies, improving system performance, and writing clean,
+            maintainable code. As a husband and father, I value responsibility,
+            discipline, and long-term growth—qualities I bring into both my
+            academic work and development projects. I&apos;m eager to contribute
+            to a collaborative team where I can continue expanding my technical
+            skills and deliver meaningful software solutions.
           </p>
         </SectionBlock>
 
@@ -70,15 +75,6 @@ export default function AboutPage() {
             >
               GitHub
             </a>
-          </div>
-        </SectionBlock>
-
-        <SectionBlock title="Campus Engagement">
-          <div className={styles.engagementList}>
-            <div className={styles.engagementItem}>
-              Polynesian Heritage Association
-            </div>
-            <div className={styles.engagementItem}>D1 Rugby</div>
           </div>
         </SectionBlock>
       </div>

@@ -3,6 +3,7 @@ import GradientText from "@/components/GradientText/GradientText";
 import PageWrapper from "@/components/PageWrapper/PageWrapper";
 import SectionBlock from "@/components/SectionBlock/SectionBlock";
 import { EducationShaderCards } from "./EducationShaderCards";
+import { EducationTopoHero } from "./EducationTopoHero";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = { title: "Education" };
@@ -17,17 +18,20 @@ export default function EducationPage() {
       </div>
 
       <SectionBlock title="Education">
-        <div className={styles.eduCard}>
-          <h3 className={styles.school}>Southern Virginia University</h3>
-          <p className={styles.degree}>
-            Bachelor of Science in Computer Science
-          </p>
-          <p className={styles.date}>Expected May 2026</p>
-        </div>
+        <EducationTopoHero />
       </SectionBlock>
 
       <SectionBlock title="Skills">
         <EducationShaderCards />
+      </SectionBlock>
+
+      <SectionBlock title="Campus Engagement">
+        <div className={styles.engagementList}>
+          <div className={styles.engagementItem}>
+            Polynesian Heritage Association
+          </div>
+          <div className={styles.engagementItem}>D1 Rugby</div>
+        </div>
       </SectionBlock>
     </PageWrapper>
   );
