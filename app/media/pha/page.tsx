@@ -7,12 +7,12 @@ import styles from "./page.module.css";
 export const metadata: Metadata = { title: "Polynesian Heritage Association" };
 
 const phaIntros = [
-  { title: "Aotearoa", src: "https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/pha/aotearoa.mp4" },
-  { title: "Fiji", src: "https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/pha/fiji.mp4" },
-  { title: "Hawaii", src: "https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/pha/hawaii.mp4" },
-  { title: "Samoa", src: "https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/pha/samoa.mp4" },
-  { title: "Tahiti", src: "https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/pha/tahiti.mp4" },
-  { title: "Tonga", src: "https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/pha/tonga.mp4" },
+  { title: "Aotearoa", src: "https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/r2-videos/pha/aotearoa.mp4" },
+  { title: "Fiji", src: "https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/r2-videos/pha/fiji.mp4" },
+  { title: "Hawaii", src: "https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/r2-videos/pha/hawaii.mp4" },
+  { title: "Samoa", src: "https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/r2-videos/pha/samoa.mp4" },
+  { title: "Tahiti", src: "https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/r2-videos/pha/tahiti.mp4" },
+  { title: "Tonga", src: "https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/r2-videos/pha/tonga.mp4" },
 ];
 
 export default function PHAPage() {
@@ -42,7 +42,7 @@ export default function PHAPage() {
             preload="metadata"
             playsInline
           >
-            <source src="https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/pha/wide-warriors.mp4" type="video/mp4" />
+            <source src="https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/r2-videos/pha/wide-warriors.mp4" type="video/mp4" />
           </video>
         </div>
         <h3 className={styles.videoTitle}>PHA Wide Warriors</h3>

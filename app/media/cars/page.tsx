@@ -29,7 +29,7 @@ export default function CarsPage() {
   return (
     <ScrollExpandMedia
       mediaType="video"
-      mediaSrc="https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/vwbus.mp4"
+      mediaSrc="https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/r2-videos/vwbus.mp4"
       bgImageSrc="/images/cars/mikebusedit1.jpg"
       title="Car Photography"
       scrollToExpand="Scroll to explore"

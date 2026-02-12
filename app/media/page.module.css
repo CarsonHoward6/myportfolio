@@ -97,6 +97,14 @@
   text-decoration: none;
 }
 
+.categoryCardWide {
+  grid-column: 1 / -1;
+}
+
+.categoryImageWrapperWide {
+  aspect-ratio: 21 / 9;
+}
+
 .categoryCard:hover {
   border-color: var(--accent-purple);
   box-shadow: 0 12px 48px rgba(64, 145, 108, 0.15);

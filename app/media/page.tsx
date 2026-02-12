@@ -24,13 +24,8 @@ const categories = [
     title: "PHA",
     description: "Polynesian Heritage Association at Southern Virginia University",
     href: "/media/pha",
-    video: "https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/pha-cover.mp4",
-  },
-  {
-    title: "Portfolio",
-    description: "A curated selection across sports, events, and storytelling",
-    href: "/media/other",
-    video: "https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/profile.mp4",
+    video: "https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/r2-videos/pha-cover.mp4",
+    wide: true,
   },
 ];
 
@@ -68,8 +63,8 @@ export default function MediaPage() {
 
       <div className={styles.categoryGrid}>
         {categories.map((cat) => (
-          <Link key={cat.title} href={cat.href} className={styles.categoryCard}>
-            <div className={styles.categoryImageWrapper}>
+          <Link key={cat.title} href={cat.href} className={`${styles.categoryCard}${cat.wide ? ` ${styles.categoryCardWide}` : ''}`}>
+            <div className={`${styles.categoryImageWrapper}${cat.wide ? ` ${styles.categoryImageWrapperWide}` : ''}`}>
               {cat.image ? (
                 <Image
                   src={cat.image}
