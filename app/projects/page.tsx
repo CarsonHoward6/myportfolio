@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import GradientText from "@/components/GradientText/GradientText";
 import PageWrapper from "@/components/PageWrapper/PageWrapper";
+import ProjectsRobot from "./ProjectsRobot";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = { title: "Projects" };
@@ -20,6 +21,21 @@ const projects = [
       "PostgreSQL",
       "Redis",
       "Docker",
+    ],
+  },
+  {
+    name: "Portfolio Website",
+    period: "Current",
+    current: true,
+    description:
+      "A personal portfolio website showcasing projects, education, work experience, and media production work. Features GSAP-powered animations, WebGL shader cards, 3D parallax effects, and video content hosted on Cloudflare R2.",
+    tech: [
+      "Next.js 15",
+      "TypeScript",
+      "GSAP",
+      "CSS Modules",
+      "Cloudflare R2",
+      "Vercel",
     ],
   },
   {
@@ -49,28 +65,30 @@ export default function ProjectsPage() {
         </GradientText>
       </div>
 
-      <div className={styles.grid}>
-        {projects.map((project) => (
-          <div key={project.name} className={styles.card}>
-            <div className={styles.cardHeader}>
-              <h3 className={styles.projectName}>{project.name}</h3>
-              <span
-                className={`${styles.badge} ${project.current ? styles.badgeCurrent : ""}`}
-              >
-                {project.period}
-              </span>
-            </div>
-            <p className={styles.description}>{project.description}</p>
-            <div className={styles.techStack}>
-              {project.tech.map((t) => (
-                <span key={t} className={styles.tech}>
-                  {t}
+      <ProjectsRobot>
+        <div className={styles.grid}>
+          {projects.map((project) => (
+            <div key={project.name} className={styles.card}>
+              <div className={styles.cardHeader}>
+                <h3 className={styles.projectName}>{project.name}</h3>
+                <span
+                  className={`${styles.badge} ${project.current ? styles.badgeCurrent : ""}`}
+                >
+                  {project.period}
                 </span>
-              ))}
+              </div>
+              <p className={styles.description}>{project.description}</p>
+              <div className={styles.techStack}>
+                {project.tech.map((t) => (
+                  <span key={t} className={styles.tech}>
+                    {t}
+                  </span>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </ProjectsRobot>
     </PageWrapper>
   );
 }

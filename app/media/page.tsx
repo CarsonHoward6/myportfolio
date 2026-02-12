@@ -18,7 +18,7 @@ const categories = [
     title: "Wedding Films",
     description: "Cinematic films capturing your special day",
     href: "/media/weddings",
-    image: "/images/wedding-cover.jpeg",
+    video: "https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/r2-videos/2025_06_14_15_21_16_Cache.mp4",
   },
   {
     title: "PHA",
