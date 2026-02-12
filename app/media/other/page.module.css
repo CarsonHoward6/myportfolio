@@ -1,0 +1,28 @@
+.backLink {
+  display: inline-block;
+  color: var(--accent-blue);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  transition: color var(--transition-fast);
+}
+
+.backLink:hover {
+  color: var(--accent-purple);
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.heading {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.intro {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}

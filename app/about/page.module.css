@@ -1,0 +1,99 @@
+.sparklesBg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.sparklesBg :global(.sparkles-fill) {
+  width: 100%;
+  height: 100%;
+}
+
+.page {
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0 3rem;
+}
+
+.cardWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.objective {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.contactItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contactLabel {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contactValue {
+  color: var(--accent-blue);
+  font-size: 1rem;
+  transition: color var(--transition-fast);
+}
+
+.contactValue:hover {
+  color: var(--accent-purple);
+}
+
+.linksList {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.linkItem {
+  color: var(--accent-blue);
+  font-size: 1.05rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.linkItem:hover {
+  border-color: var(--accent-purple);
+  color: var(--accent-purple);
+  background: rgba(64, 145, 108, 0.05);
+}
+
+.engagementList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.engagementItem {
+  padding: 1rem 1.25rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: 1rem;
+}
