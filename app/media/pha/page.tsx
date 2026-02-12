@@ -39,13 +39,14 @@ export default function PHAPage() {
           <video
             className={styles.video}
             controls
-            preload="metadata"
+            autoPlay
+            muted
             playsInline
           >
             <source src="https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/r2-videos/pha/wide-warriors.mp4" type="video/mp4" />
           </video>
         </div>
-        <h3 className={styles.videoTitle}>PHA Wide Warriors</h3>
+        <h3 className={styles.videoTitle}>PHA Warriors</h3>
       </div>
 
       <h4 className={styles.subheading}>Island Intros</h4>
