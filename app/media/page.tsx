@@ -24,13 +24,13 @@ const categories = [
     title: "PHA",
     description: "Polynesian Heritage Association at Southern Virginia University",
     href: "/media/pha",
-    video: "/videos/pha-cover.mp4",
+    video: "https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/pha-cover.mp4",
   },
   {
     title: "Portfolio",
     description: "A curated selection across sports, events, and storytelling",
     href: "/media/other",
-    video: "/videos/profile.mp4",
+    video: "https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/profile.mp4",
   },
 ];
 

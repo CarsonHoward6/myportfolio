@@ -9,11 +9,11 @@ export const metadata: Metadata = { title: "Wedding Films" };
 const weddingFilms = [
   {
     title: "Brydges Wedding",
-    src: "/videos/brydges-wedding.mp4",
+    src: "https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/brydges-wedding.mp4",
   },
   {
     title: "Goodbars Wedding",
-    src: "/videos/goodbars-wedding.mp4",
+    src: "https://pub-6bcb27089a4d4273905b2c97828b61df.r2.dev/goodbars-wedding.mp4",
   },
 ];
 
